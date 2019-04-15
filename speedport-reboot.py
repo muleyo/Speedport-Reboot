@@ -207,7 +207,7 @@ def wait():
         except:
             # Only try for 5 minutes
             if time.time() - start > 300:
-                sys.exit("[" + pcolors.RED + "ERROR" + pcolors.WHITE + "] " + "System still not successfully rebooted after 5 minutes.")
+                sys.exit("[" + pcolors.RED + "ERROR" + pcolors.WHITE + "] " + "System is still not successfully rebooted after 5 minutes.")
 
 def online():
     print("\n[" + pcolors.YELLOW + "INFO" + pcolors.WHITE + "] " + "Waiting for the system to go online...")
@@ -232,7 +232,7 @@ def online():
         except:
             # Only try for 5 minutes
             if (time.time() - start) > 300:
-                sys.exit("[" + pcolors.RED + "ERROR" + pcolors.WHITE + "] " + "System still not online after 5 minutes.")
+                sys.exit("[" + pcolors.RED + "ERROR" + pcolors.WHITE + "] " + "System is still not online after 5 minutes.")
 
 def get_csrf_token():
     print("\n[" + pcolors.YELLOW + "INFO" + pcolors.WHITE + "] " + "Trying to extract the CSRF Token...")
